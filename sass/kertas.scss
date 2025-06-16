@@ -1,0 +1,53 @@
+:root {
+    --bg-color: #faf8bd;
+    --line-color-1: #366;
+    --line-color-2: #a9a9a9;
+}
+
+.kertas {
+    // background: white;
+    padding: 16px 16px 16px 32px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 2px 3px 3px rgba(#1b1b1b, 0.5);
+    background-color: var(--bg-color);
+    background-image:
+        linear-gradient(rgba(#ccc, 0.6) 3.5px, transparent 3.5px),
+        // linear-gradient(90deg, red 1.5px, transparent 1.5px),
+        linear-gradient(rgba(#ccc, 0.6) 2px, transparent 2px),
+        // linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px)
+;
+    background-position:
+        -3.5px -3.5px,
+        // -1.5px -1.5px,
+        -3px -3px,
+        //-1px -1px
+;
+    background-size:
+        0 9px,
+        // 40px 40px,
+        24px 32px;
+    @media screen and (max-width: 768px) {
+        background-size:
+            0 9px,
+            24px 24px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 16px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+        background: #efbabe;
+    }
+    p {
+        margin-bottom: 1.2rem;
+        color: #1b1b1b;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 1.3rem;
+        }
+    }
+}

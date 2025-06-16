@@ -1,0 +1,49 @@
+.harga {
+    background: #5fb1e1;
+    min-height: auto;
+    .image {
+        width: 60%;
+        height: auto;
+        position: relative;
+        @media screen and (max-width: 768px) {
+            width: 70%;
+            margin-left: -8%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .pricing {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: bold;
+        font-size: 2rem;
+        &:before {
+            content: "";
+            position: absolute;
+            left: -200px;
+            height: 1px;
+            top: 50%;
+            width: 100%;
+            border: 1px dashed #fff;
+            z-index: -1;
+            @media screen and (max-width: 768px) {
+                width: 0;
+                height: 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            background: rgba(white, 0.7);
+            padding: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+    .wraps {
+        position: relative;
+        margin-bottom: 72px;
+    }
+}

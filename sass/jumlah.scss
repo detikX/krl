@@ -1,0 +1,186 @@
+.jumlah {
+    // background: #268386;
+    // background: #aaa;
+    background: #5fb1e1;
+    @keyframes awanx {
+        0%,
+        100% {
+            left: 16%;
+        }
+        50% {
+            left: 8%;
+        }
+    }
+    @keyframes awanx2 {
+        0%,
+        100% {
+            left: 45%;
+        }
+        50% {
+            left: 40%;
+        }
+    }
+    .awan {
+        position: absolute;
+        left: 16%;
+        animation: awanx 8s linear infinite;
+
+        top: 8%;
+        width: 120px;
+        height: auto;
+        z-index: 1;
+        opacity: 0.5;
+        @media screen and (max-width: 768px) {
+            top: -16%;
+            width: 75px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        &.dua {
+            top: 0;
+            width: 100px;
+            // opacity: 0.2;
+            animation: awanx2 9s linear infinite;
+            left: 45%;
+        }
+    }
+    // min-height: auto;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background: $colorred;
+        top: 0;
+        left: 0;
+        right: 0;
+        @media screen and (max-width: 768px) {
+            // height: 100px;
+        }
+    }
+    .judul-top {
+        // background: rgb(26 81 83);
+        // background: #d8d8d8;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        width: fit-content;
+        margin: 0 auto;
+        background: #efefef;
+        padding: 8px 16px;
+        border: 4px solid #4d4d4d;
+        border-radius: 8px;
+        h3 {
+            margin-bottom: 0;
+            color: #d22629;
+            font-size: 2.5rem;
+            @media screen and (max-width: 768px) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .wrapingx {
+        position: relative;
+        width: 70%;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        .cekix {
+            position: absolute;
+            background: rgba(255, 235, 59, 0.8);
+            color: #1b1b1b;
+            font-weight: bold;
+            padding: 8px;
+            font-size: 1.2rem;
+            z-index: 9;
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
+            &-one {
+                right: 80px;
+                top: 50%;
+                @media screen and (max-width: 768px) {
+                    right: 80px;
+                    top: 16%;
+                }
+            }
+            &-two {
+                right: 350px;
+                top: 30%;
+                @media screen and (max-width: 768px) {
+                    right: 35px;
+                    top: 65%;
+                }
+            }
+            &-three {
+                right: 450px;
+                top: 50%;
+                @media screen and (max-width: 768px) {
+                    right: 45px;
+                    top: 38%;
+                }
+            }
+            &-four {
+                right: 550px;
+                top: 70%;
+                @media screen and (max-width: 768px) {
+                    right: 140px;
+                    top: 100%;
+                }
+            }
+            &-five {
+                right: 650px;
+                top: 40%;
+                @media screen and (max-width: 768px) {
+                    right: 65px;
+                    top: -14%;
+                }
+            }
+        }
+    }
+    .krl-flat {
+        height: auto;
+        margin-left: -100px;
+        width: 100%;
+        position: relative;
+        z-index: 8;
+        height: 100%;
+        @media screen and (max-width: 768px) {
+            scale: 1.4;
+            margin-top: 16%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .ceking {
+        position: absolute;
+        // height: 100vh;
+        // position: relative;
+        margin: -15% auto;
+        width: 400px;
+        // margin: 0 auto;
+    }
+    .spesification {
+        background: rgba($color: #000, $alpha: 0.3);
+        padding: 16px;
+        position: relative;
+        z-index: 3;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+
+        ul {
+            padding: 0;
+        }
+    }
+}
