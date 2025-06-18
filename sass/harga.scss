@@ -21,6 +21,13 @@
         top: 0;
         font-weight: bold;
         font-size: 2rem;
+        @media screen and (max-width: 768px) {
+            top: 40px;
+        }
+        small {
+            font-size: 50%;
+            font-weight: bold;
+        }
         &:before {
             content: "";
             position: absolute;

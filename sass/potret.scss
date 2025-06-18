@@ -119,3 +119,15 @@
         stroke-dashoffset: 2660;
     }
 }
+
+.embed {
+    background: #5fb1e1;
+    min-height: auto;
+    iframe {
+        width: 260px;
+        border: 6px solid black;
+        border-radius: 24px;
+        height: 480px;
+        margin: 0 auto;
+    }
+}
