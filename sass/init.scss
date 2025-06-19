@@ -590,7 +590,7 @@ section {
 .hello {
     // background: rgba($color: white, $alpha: 0.8);
     background: linear-gradient(to right, white, rgba(white, 0.7));
-    padding: 8px;
+    padding: 16px 32px;
     border-radius: 16px;
     margin-bottom: 35vh;
     p {
