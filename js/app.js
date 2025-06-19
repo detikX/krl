@@ -94,3 +94,31 @@ function drawHand(ctx, pos, length, width, color = "#121212") {
     ctx.stroke();
     ctx.rotate(-pos);
 }
+
+function ScrollIndicator() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // var height = $(".ref").height();
+    var scrolled = (winScroll / height) * 100;
+    console.log(Math.round(scrolled));
+    $('#myiframe')[0].src = "https://youtube.com/embed/_jeUgUsGZnI";
+    if (Math.round(scrolled) > 55 && Math.round(scrolled) < 70) {
+        // $(".embed").addClass('gunung');
+        var loc = 'https://youtube.com/embed/_jeUgUsGZnI?autoplay=1&mute=1',
+            params = loc.split('?')[1],
+            iframe = $('#myiframe')[0];
+
+        console.log(params);
+        // iframe.addClass('aa')
+        iframe.src = iframe.src + '?' + params;
+        // console.log($("#myiframe")[0].src);
+
+
+    }
+    // else {
+    //     $(".embed").removeClass('gunung')
+    // }
+
+}
+
+window.onscroll = function () { ScrollIndicator() };
