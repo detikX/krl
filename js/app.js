@@ -102,7 +102,7 @@ function ScrollIndicator() {
     var scrolled = (winScroll / height) * 100;
     console.log(Math.round(scrolled));
     $('#myiframe')[0].src = "https://youtube.com/embed/_jeUgUsGZnI";
-    if (Math.round(scrolled) > 50 && Math.round(scrolled) < 85) {
+    if (Math.round(scrolled) > 40 && Math.round(scrolled) < 105) {
         // $(".embed").addClass('gunung');
         var loc = 'https://youtube.com/embed/_jeUgUsGZnI?autoplay=1&mute=1',
             params = loc.split('?')[1],
