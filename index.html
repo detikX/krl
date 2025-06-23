@@ -79,8 +79,58 @@
                         viewBox="0 0 2500 1800"
                         enable-background="new 0 0 2500 1800"
                         xml:space="preserve"
+                        width="800"
+                        height="576"
                     >
-                        <path class="traintrax" stroke="#DA001A" d="M2110.5,321.3l-184.6,184.6c-6.9,6.9-16.3,10.8-26,10.8h-97.6c-13.6,0-24.5,11-24.5,24.5v14"/>
+                        <style>
+  .train, .trainbase {
+    stroke-dasharray: 50 2320 50 4 50 4;
+    animation-duration: 13s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+  .train{
+    fill:none;stroke:#545454;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+  }
+  .trainbase{
+    fill:none;stroke:#efefef;stroke-width:19;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;
+  }
+    .traintrax {fill:none;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+    }
+  .greenline.train, .greenline.trainbase {
+    stroke-dashoffset: 60;
+    animation-name: dash;
+  }
+  @keyframes dash {
+    17% { stroke-dashoffset: 60; }
+    57%,62% { stroke-dashoffset: 1621; }
+    90%,100% { stroke-dashoffset: 2360; }
+    }
+  .blueline.train, .blueline.trainbase{
+    stroke-dashoffset: 1020;
+    animation-name: dash2;
+    animation-delay: 4s;
+    }
+  @keyframes dash2 {
+    17% { stroke-dashoffset: 1020; }
+    45%,50% { stroke-dashoffset: 1580; }
+    90%,100% { stroke-dashoffset: 2360; }
+    }
+  .redline.train, .redline.trainbase{
+    stroke-dasharray: 50 2620 50 4 50 4;
+    stroke-dashoffset: 150;
+    animation-name: dash3;
+    animation-delay: 1s;
+    }
+  @keyframes dash3 {
+    17% { stroke-dashoffset: 150; }
+    65%,70% { stroke-dashoffset: 2020; }
+    90%,100% { stroke-dashoffset: 2660; }
+    }
+                        </style>
+                        <path class="traintrax" stroke="#DA001A" d="M2110.5,321.3l-184.6,184.6
+		c-6.9,6.9-16.3,10.8-26,10.8h-97.6c-13.6,0-24.5,11-24.5,24.5v14"/>
                         <path class="traintrax" stroke="#008ECC" d="M2144.2,734h-650.7c-9.8,0-19.1-3.9-26-10.8
 		L874.9,130.7 M398.7,132.4L756,489.7c6.9,6.9,16.2,10.8,26,10.8l452.4,0.2c6.8,0,13.3,2.7,18,7.5l10.7,10.7"/>
                         <path class="blueline train" d="M2144.2,734h-650.7c-9.8,0-19.1-3.9-26-10.8
@@ -238,19 +288,41 @@
                         Pesanan KAI Commuter dari CRRC: 11 trainset/rangkaian kereta (1 rangkaian terdiri dari 12 kereta, total 132 unit) dari CRRC Qingdao Sifang.
                     </p>
                     <div class="wraps">
-                        <div class="image">
+                        <div
+                            class="image"
+                            data-aos="fade-right"
+                            data-aos-duration="300"
+                            data-aos-easing="linear"
+                        >
                             <img src="img/krl-jepang.png" alt="">
                         </div>
-                        <div class="pricing">
+                        <div
+                            class="pricing"
+                            data-aos="fade-left"
+                            data-aos-duration="300"
+                            data-aos-easing="linear"
+                            data-aos-delay="700"
+                        >
                             Rp 225,6 Miliar
                             <small>/trainset</small>
                         </div>
                     </div>
                     <div class="wraps">
-                        <div class="image">
+                        <div
+                            class="image"
+                            data-aos="fade-right"
+                            data-aos-duration="300"
+                            data-aos-easing="linear"
+                        >
                             <img src="img/krl-china.png" alt="">
                         </div>
-                        <div class="pricing">
+                        <div
+                            class="pricing"
+                            data-aos="fade-left"
+                            data-aos-duration="300"
+                            data-aos-easing="linear"
+                            data-aos-delay="700"
+                        >
                             Rp 275 Miliar
                             <small>/trainset</small>
                         </div>
@@ -259,8 +331,22 @@
             </section>
             <section class="embed">
                 <div class="wrap-detikx">
-                    <div class="text-center mx-auto">
-                        <iframe id="myiframe" src="https://youtube.com/embed/_jeUgUsGZnI" frameborder="0"></iframe>
+                    <div class="box-bg">
+                        <p>
+                            Diantara tiga rangkaian KRL baru yang diimpor dari China, dua rangkaian beroperasi di Lintas Bogor dan satu rangkaian di Lintas Cikarang.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image">
+                                <img src="img/rute.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center mx-auto">
+                                <iframe id="myiframe" src="https://youtube.com/embed/_jeUgUsGZnI" frameborder="0"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -285,6 +371,13 @@
                         <h5>65-75 Menit</h5>
                         <p>
                             Perjalanan KRL dari Stasiun Tangerang menuju Manggarai menempuh jarak sekitar 26 kilometer. Rute ini melintasi sejumlah stasiun antara seperti Duri, Tanah Abang, hingga Sudirman. Dengan waktu tunggu dan persinggahan di setiap stasiun, rata-rata waktu tempuhnya berkisar antara 65 hingga 75 menit, tergantung kepadatan dan antrean kereta di lintas Tanah Abang–Manggarai.
+                        </p>
+                    </div>
+                    <div class="hello">
+                        <h4 class="color-black">Rangkasbitung – Manggarai</h4>
+                        <h5>110-120 Menit</h5>
+                        <p>
+                            Perjalanan KRL Commuter Line dari Rangkasbitung ke Manggarai membutuhkan waktu rata-rata sekitar dua jam lima menit, melewati belasan stasiun dari wilayah barat Banten hingga jantung ibu kota. Kereta berangkat dari Stasiun Rangkasbitung dan melaju melalui jalur Serpong Line menuju Stasiun Tanah Abang, dengan waktu tempuh sekitar 1 jam 50 menit. Di Tanah Abang, penumpang harus transit dan berganti kereta tujuan Manggarai, biasanya menunggu antara dua hingga sebelas menit tergantung jadwal. Dari sana, perjalanan dilanjutkan sekitar 10 hingga 15 menit menuju Stasiun Manggarai, pusat simpul perlintasan KRL Jabodetabek.
                         </p>
                     </div>
                     <div class="hello">

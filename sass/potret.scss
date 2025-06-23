@@ -124,11 +124,31 @@
 .embed {
     background: #5fb1e1;
     min-height: auto;
+    .image {
+        width: 100%;
+        height: 480px;
+        margin-bottom: 24px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     iframe {
         width: 260px;
         border: 6px solid black;
         border-radius: 24px;
         height: 480px;
         margin: 0 auto;
+    }
+}
+
+.box-bg {
+    background: rgba($color: #000000, $alpha: 0.4);
+    padding: 16px;
+    margin-bottom: 24px;
+    // border-radius: 16px;
+    p {
+        margin-bottom: 0;
     }
 }
