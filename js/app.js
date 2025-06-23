@@ -102,13 +102,13 @@ function ScrollIndicator() {
     var scrolled = (winScroll / height) * 100;
     console.log(Math.round(scrolled));
     $('#myiframe')[0].src = "https://youtube.com/embed/_jeUgUsGZnI";
-    if (Math.round(scrolled) > 55 && Math.round(scrolled) < 80) {
+    if (Math.round(scrolled) > 50 && Math.round(scrolled) < 85) {
         // $(".embed").addClass('gunung');
         var loc = 'https://youtube.com/embed/_jeUgUsGZnI?autoplay=1&mute=1',
             params = loc.split('?')[1],
             iframe = $('#myiframe')[0];
 
-        console.log(params);
+        console.log(scrolled);
         // iframe.addClass('aa')
         iframe.src = iframe.src + '?' + params;
         // console.log($("#myiframe")[0].src);
