@@ -44,7 +44,7 @@
             transform: rotate(2deg);
             @media screen and (max-width: 768px) {
                 height: 150px;
-                top: -60px;
+                top: -90px;
             }
         }
     }
@@ -239,5 +239,6 @@ span.yellow {
     // padding: 8px;
     // color: #1b1b1b;
     // color: #1b1b1b;
+    text-decoration: underline;
     font-weight: bold;
 }
