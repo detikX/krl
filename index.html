@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KRL China di Indonesia</title>
         <link rel="stylesheet" href="sass/bootstrap.min.css">
+        <link rel="stylesheet" href="sass/animate.min.css">
         <link rel="stylesheet" href="sass/aos.css">
         <link rel="stylesheet" href="sass/slick-theme.css">
         <link rel="stylesheet" href="sass/slick.css">
@@ -14,14 +15,23 @@
     <body>
         <main>
             <section class="banner">
-                <div class="image">
+                <div class="image wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                     <img src="img/krl-coba.png" alt="">
                 </div>
                 <div class="images">
                     <img src="img/background-opacity-04.png" alt="">
                 </div>
-                <div class="title">
+                <div class="title wow animate__animated animate__zoomIn" data-wow-delay="2s">
                     <h2>Babak Baru KRL Jabodetabek</h2>
+                </div>
+                <div class="container_mouse wow animate__animated animate__backInUp" data-wow-delay="3s" id="scroll">
+                    <span class="mouse-btn">
+                        <span class="mouse-scroll"></span>
+                    </span>
+                    <span>
+                        <i>Scroll</i>
+                        ke bawah
+                    </span>
                 </div>
             </section>
             <section class="pembukaan">
@@ -647,6 +657,7 @@
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/gsap.min.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/ScrollTrigger.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
