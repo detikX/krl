@@ -1,3 +1,9 @@
+Highcharts.setOptions({
+    lang: {
+        thousandsSep: '.'
+    }
+})
+
 Highcharts.chart('container', {
     chart: {
         // type: 'column',
