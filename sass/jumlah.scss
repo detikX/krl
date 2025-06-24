@@ -6,10 +6,10 @@
     .gedung {
         position: absolute;
         right: 0;
-        top: -16%;
+        top: 0%;
         width: 100%;
-        height: 87%;
-        z-index: 0;
+        height: 50%;
+        z-index: -1;
         @media screen and (max-width: 768px) {
             position: absolute;
             right: -4%;
@@ -110,6 +110,117 @@
     //         // height: 100px;
     //     }
     // }
+
+    .lihat {
+        @media screen and (max-width: 768px) {
+            height: 55vh;
+        }
+    }
+
+    .cekix {
+        // position: absolute;
+        background: rgba(255, 235, 59, 1);
+        color: #1b1b1b;
+        font-weight: bold;
+        padding: 8px;
+        font-size: 1.2rem;
+        position: relative;
+        width: fit-content;
+        z-index: 9;
+        margin-bottom: 16px;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        &-one {
+            // right: 80px;
+            // top: 50%;
+            // z-index: 2;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -70%;
+                top: 50%;
+                width: 70%;
+                height: 100px;
+                border-left: 3px dashed #fff;
+                border-top: 3px dashed #fff;
+            }
+            @media screen and (max-width: 768px) {
+                // right: 80px;
+                // top: 16%;
+            }
+        }
+        &-two {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50%;
+                top: 50%;
+                z-index: -1;
+                width: 50%;
+                height: 80px;
+                border-left: 3px dashed #fff;
+                border-top: 3px dashed #fff;
+            }
+            @media screen and (max-width: 768px) {
+            }
+        }
+        &-three {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -70%;
+                top: 50%;
+                z-index: -1;
+                width: 70%;
+                height: 150px;
+                // border-left: 3px dashed #fff;
+                border-top: 3px dashed #fff;
+            }
+            @media screen and (max-width: 768px) {
+            }
+        }
+        &-four {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -70%;
+                top: 50%;
+                z-index: -1;
+                width: 70%;
+                height: 150px;
+                // border-left: 3px dashed #fff;
+                border-top: 3px dashed #fff;
+            }
+            // @media screen and (max-width: 768px) {
+            //     right: 140px;
+            //     top: 100%;
+            // }
+        }
+        &-five {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -40%;
+                top: 50%;
+                z-index: -1;
+                width: 40%;
+                height: 50px;
+                // border-left: 3px dashed #fff;
+                border-top: 3px dashed #fff;
+            }
+            @media screen and (max-width: 768px) {
+                // right: 65px;
+                // top: -14%;
+            }
+        }
+    }
+    .wkwk {
+        @media screen and (max-width: 768px) {
+            top: -30%;
+        }
+    }
     .judul-top {
         // background: rgb(26 81 83);
         // background: #d8d8d8;
@@ -134,74 +245,43 @@
     }
     .wrapingx {
         position: relative;
-        width: 70%;
+        width: 100%;
         height: auto;
         @media screen and (max-width: 768px) {
             width: 100%;
-        }
-        .cekix {
             position: absolute;
-            background: rgba(255, 235, 59, 0.8);
-            color: #1b1b1b;
-            font-weight: bold;
-            padding: 8px;
-            font-size: 1.2rem;
-            z-index: 9;
-            @media screen and (max-width: 768px) {
-                font-size: 1rem;
-            }
-            &-one {
-                right: 80px;
-                top: 50%;
-                @media screen and (max-width: 768px) {
-                    right: 80px;
-                    top: 16%;
-                }
-            }
-            &-two {
-                right: 350px;
-                top: 30%;
-                @media screen and (max-width: 768px) {
-                    right: 35px;
-                    top: 65%;
-                }
-            }
-            &-three {
-                right: 450px;
-                top: 50%;
-                @media screen and (max-width: 768px) {
-                    right: 45px;
-                    top: 38%;
-                }
-            }
-            &-four {
-                right: 550px;
-                top: 70%;
-                @media screen and (max-width: 768px) {
-                    right: 140px;
-                    top: 100%;
-                }
-            }
-            &-five {
-                right: 650px;
-                top: 40%;
-                @media screen and (max-width: 768px) {
-                    right: 65px;
-                    top: -14%;
-                }
-            }
+            bottom: -46%;
+            height: 100%;
         }
     }
     .krl-flat {
         height: auto;
         margin-left: -100px;
-        width: 100%;
+        width: 110%;
         position: relative;
         z-index: 8;
         height: 100%;
         @media screen and (max-width: 768px) {
-            scale: 1.4;
-            margin-top: 16%;
+            // position: absolute;
+            // bottom: 0;
+        }
+        &::after {
+            // content: "";
+            // position: absolute;
+            // right: 0;
+            // top: 32%;
+            // width: 300px;
+            // z-index: -1;
+            // height: 300px;
+            // border-top: 3px dashed white;
+        }
+        @media screen and (max-width: 768px) {
+            // scale: 1.4;
+            // width: 100%;
+            // margin-top: 16%;
+            scale: 3.4;
+            width: 100%;
+            margin-top: 60%;
         }
 
         img {

@@ -100,7 +100,7 @@ function ScrollIndicator() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     // var height = $(".ref").height();
     var scrolled = (winScroll / height) * 100;
-    console.log(Math.round(scrolled));
+    // console.log(Math.round(scrolled));
     // $('#myiframe')[0].src = "https://youtube.com/embed/_jeUgUsGZnI";
     if (Math.round(scrolled) > 40 && Math.round(scrolled) < 105) {
         // $(".embed").addClass('gunung');
@@ -146,3 +146,4 @@ gsap.timeline({
         rotate: 360
     })
 
+$('.single-item').slick();
