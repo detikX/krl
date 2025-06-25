@@ -147,3 +147,10 @@ gsap.timeline({
     })
 
 $('.single-item').slick();
+
+
+$('#scroll').click(function (event) {
+    $('html, body').animate({
+        scrollTop: $(".pembukaan").offset().top
+    }, 300);
+});
