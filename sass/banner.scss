@@ -20,16 +20,15 @@
         }
         @media screen and (max-width: 768px) {
             position: absolute;
-            // inset: 8%;
             width: 100%;
             inset: initial;
-            height: 100%;
+            height: 50%;
             z-index: -1;
             filter: grayscale(1);
             scale: 1.8;
             opacity: 0.2;
             left: -32%;
-            bottom: -5%;
+            bottom: 26%;
         }
         img {
             width: 100%;
@@ -48,7 +47,7 @@
         bottom: 0%;
         @media screen and (max-width: 768px) {
             width: 100%;
-            bottom: 24%;
+            bottom: 30%;
             scale: 1.4;
             left: -16%;
         }
@@ -67,7 +66,7 @@
         text-align: center;
         translate: -50% -50%;
         @media screen and (max-width: 768px) {
-            top: 36%;
+            top: 32%;
         }
         h2 {
             //color: rgb(26 81 83);
@@ -99,7 +98,7 @@
     translate: -50% -50%;
     cursor: pointer;
     @media screen and (max-width: 768px) {
-        top: 93%;
+        top: 85%;
         padding-top: 0;
     }
 }
